@@ -6,7 +6,7 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
-    this->setStyleSheet("#label_2 { color: green; }  #label { color: green; } ");
+    this->setStyleSheet("QLabel { color: green; }");
 }
 
 Dialog::~Dialog()
