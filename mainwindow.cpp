@@ -8,18 +8,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setStyleSheet("QLabel { color: red; }");
-    connect(ui->pushButton, SIGNAL(released()), this, SLOT(ASD()));
+    Dialog *f = new Dialog(this);
+    f->show();
 
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-
-void MainWindow::ASD()
-{
-    Dialog *f = new Dialog(this);
-    f->show();
 }
